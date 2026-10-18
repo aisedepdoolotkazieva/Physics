@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>§22. Токтун жумушу жана кубаттуулугу | Физика 11-класс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+    <!-- Башкы навигация -->
+    <header class="header">
+        <div class="logo">
+            <h2>Физика 11-класс</h2>
+            <span>§22. Токтун жумушу жана кубаттуулугу</span>
+        </div>
+        <nav class="nav-menu">
+            <button class="nav-btn active" data-section="definitions">Аныктамалар</button>
+            <button class="nav-btn" data-section="derivations">Формулалар кайдан келди</button>
+            <button class="nav-btn" data-section="circuit">Чийме: чынжыр</button>
+            <button class="nav-btn" data-section="graphs">Графиктер</button>
+            <button class="nav-btn" data-section="calculator">Калькулятор</button>
+            <button class="nav-btn" data-section="units">Бирдиктерди которуу</button>
+            <button class="nav-btn" data-section="quiz">Текшерүү</button>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" title="Теманы которуу">🌙</button>
+    </header>
+
+    <main class="main-content">
+        <!-- 1. БӨЛҮМ: Аныктамалар -->
+        <section id="definitions" class="section active">
+            <h1>Физикалык аныктамалар жана түшүнүктөр</h1>
+            <p class="section-desc">Темадагы негизги түшүнүктөрдү жана формулаларды изилдөө үчүн карточкаларды басыңыз.</p>
+            <div class="cards-grid">
+                <!-- Карточка 1 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>1. Токтун жумушу</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Электр талаасынын чынжырча агып өткөн зарядды жылдырууда аткарган жумушу.</p>
+                        <div class="formula">A = UIt</div>
+                        <p><strong>Физикалык мааниси:</strong> Электр энергиясынын башка түрдөгү энергияга (жылуулук, механикалык ж.б.) айлануусунун чени.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> Эгер чыңалуу же ток күчү 2 эсе көбөйсө, бөлүнүп чыккан энергия да 2 эсе көбөйөт.</p>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>2. Токтун кубаттуулугу</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Электр энергиясынын башка түрдөгү энергияга айлануу ылдамдыгын мүнөздөөчү чоңдук.</p>
+                        <div class="formula">P = <span class="fraction"><span class="numerator">A</span><span class="denominator">t</span></span> = UI</div>
+                        <p><strong>Физикалык мааниси:</strong> Бирдик убакыт ичинде аткарылган электр тогунун жумушу.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> Кубаттуулугу жогору болгон шайман (мисалы, чайнек) сууну тезирээк ысытат.</p>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>3. Көз ирмемдеги кубаттуулук</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Өзгөрмө токтун чынжырындагы убакыттын берилген t көз ирмеминдеги кубаттуулук.</p>
+                        <div class="formula">p = ui = U<sub>m</sub>I<sub>m</sub> cos(ωt) · cos(ωt + φ)</div>
+                        <p><strong>Физикалык мааниси:</strong> Белгилүү бир заматтагы чыңалуу менен ток күчүнүн көбөйтүндүсү.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> p > 0 болгондо энергия булактан чынжырча келет; p < 0 болгондо энергиянын бир бөлүгү кайра генераторго кайтат.</p>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>4. Орточо кубаттуулук</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Өзгөрмө токтун толук бир мезгил (T) ичиндеги кубаттуулуктун орточо мааниси.</p>
+                        <div class="formula">P = UI cos φ</div>
+                        <p><strong>Физикалык мааниси:</strong> Чынжырда сарпталган пайдалуу активдүү кубаттуулукту билдирет.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> Фазалык жылышуу φ = 0 болгондо кубаттуулук максималдуу болот.</p>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>5. Аракет этүүчү маанилер</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Өзгөрмө токтун жылуулук аракети боюнча ага эквиваленттүү болгон туруктуу токтун мааниси.</p>
+                        <div class="formula">U = <span class="fraction"><span class="numerator">U<sub>m</sub></span><span class="denominator">√2</span></span>, &nbsp; I = <span class="fraction"><span class="numerator">I<sub>m</sub></span><span class="denominator">√2</span></span></div>
+                        <p><strong>Физикалык мааниси:</strong> Вольтметр жана амперметр дал ушул аракет этүүчү маанилерди көрсөтөт.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> Амплитудалык мааниси 311 В болгон розеткадагы өзгөрмө чыңалуунун аракет этүүчү мааниси 220 В га барабар.</p>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="card" tabindex="0">
+                    <div class="card-header">
+                        <h3>6. Кубаттуулуктун коэффициенти</h3>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Аныктама:</strong> Өзгөрмө токтун чыңалуусу менен ток күчүнүн ортосундагы фазалык жылышуунун косинусу (cos φ).</p>
+                        <div class="formula">cos φ = <span class="fraction"><span class="numerator">P</span><span class="denominator">UI</span></span></div>
+                        <p><strong>Физикалык мааниси:</strong> Электр тармагынын канчалык натыйжалуу колдонулуп жатканын көрсөтөт.</p>
+                        <p><strong>Эмне болгондо эмне болот:</strong> φ = ±90° (таза сыйымдуулук же индуктивдүүлүк) болгондо cos φ = 0 болуп, орточо кубаттуулук нөлгө барабар болот (P = 0).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. БӨЛҮМ: Формулалар кайдан келди -->
+        <section id="derivations" class="section">
+            <h1>Формулалардын корутундусу (22.1 - 22.9)</h1>
+            <div class="stepper-container">
+                <div class="stepper-controls">
+                    <button id="step-prev" class="btn" disabled>← Мурунку кадам</button>
+                    <span id="step-counter" class="step-badge">1 / 9</span>
+                    <button id="step-next" class="btn">Кийинки кадам →</button>
+                    <button id="step-reset" class="btn btn-secondary">Башынан баштоо</button>
+                </div>
+                <div id="step-content" class="step-card">
+                    <!-- JS аркылуу динамикалык толтурулат -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. БӨЛҮМ: Чийме: чынжыр -->
+        <section id="circuit" class="section">
+            <h1>Өзгөрмө ток чынжырынын интерактивдүү схемасы</h1>
+            <div class="circuit-container">
+                <div class="circuit-controls">
+                    <button id="switch-btn" class="btn btn-toggle">Ачкычты жап</button>
+                    <span id="switch-status" class="status-badge status-off">Ачкыч ачык (Ток акпайт)</span>
+                </div>
+                <div class="svg-wrapper">
+                    <svg viewBox="0 0 600 350" id="circuit-svg">
+                        <!-- Чынжырдын зымдары -->
+                        <path d="M 100 175 L 100 80 L 500 80 L 500 175" class="wire" />
+                        <path d="M 100 175 L 100 270 L 300 270" class="wire" />
+                        <path d="M 400 270 L 500 270 L 500 175" class="wire" />
+
+                        <!-- Өзгөрмө токтун генератору (~) -->
+                        <circle cx="100" cy="175" r="30" class="component-bg" />
+                        <text x="100" y="165" class="svg-text" text-anchor="middle">~</text>
+                        <text x="100" y="195" class="svg-label" text-anchor="middle">Генератор</text>
+
+                        <!-- Активдүү каршылык (Резистор R) -->
+                        <rect x="470" y="135" width="60" height="80" class="component-bg" />
+                        <rect x="480" y="145" width="40" height="60" class="resistor" />
+                        <text x="500" y="180" class="svg-text" text-anchor="middle">R</text>
+                        <text x="545" y="180" class="svg-label">Резистор</text>
+
+                        <!-- Электр ачкычы (Ключ) -->
+                        <circle cx="300" cy="270" r="5" class="node" />
+                        <circle cx="400" cy="270" r="5" class="node" />
+                        <line id="switch-line" x1="300" y1="270" x2="385" y2="230" class="switch-arm" />
+                        <text x="350" y="305" class="svg-label" text-anchor="middle">Ачкыч (K)</text>
+
+                        <!-- Токтун кыймылын көрсөтүүчү анимациялык чекиттер -->
+                        <g id="electrons-group" opacity="0">
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                            <circle class="electron" r="4" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. БӨЛҮМ: Графиктер -->
+        <section id="graphs" class="section">
+            <h1>Өзгөрмө токтун чыңалуусу, тогу жана кубаттуулугунун графиктери</h1>
+            <div class="graph-layout">
+                <div class="canvas-container">
+                    <canvas id="graph-canvas"></canvas>
+                </div>
+                <div class="controls-panel">
+                    <h3>Параметрлерди жөндөө</h3>
+                    
+                    <div class="control-group">
+                        <label for="um-slider">Чыңалуу амплитудасы (U<sub>m</sub>): <span id="um-val">311</span> В</label>
+                        <input type="range" id="um-slider" min="0" max="400" value="311">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="im-slider">Ток күчү амплитудасы (I<sub>m</sub>): <span id="im-val">10</span> А</label>
+                        <input type="range" id="im-slider" min="0" max="20" step="0.5" value="10">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="phi-slider">Фазалык жылышуу (φ): <span id="phi-val">0</span>°</label>
+                        <input type="range" id="phi-slider" min="-90" max="90" step="1" value="0">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="freq-slider">Жыштык (ν): <span id="freq-val">2</span> Гц</label>
+                        <input type="range" id="freq-slider" min="1" max="5" step="0.5" value="2">
+                    </div>
+
+                    <div class="button-row">
+                        <button id="play-pause-btn" class="btn">Пауза</button>
+                        <button id="reset-graph-btn" class="btn btn-secondary">Калыбына келтирүү</button>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="chk-u" checked> u(t) Чыңалуу</label>
+                        <label><input type="checkbox" id="chk-i" checked> i(t) Ток күчү</label>
+                        <label><input type="checkbox" id="chk-p" checked> p(t) Кубаттуулук</label>
+                        <label><input type="checkbox" id="chk-p-avg" checked> P̄ Орточо кубаттуулук</label>
+                    </div>
+
+                    <div class="presets-container">
+                        <h4>Пресеттер:</h4>
+                        <button class="preset-btn" data-preset="res">Активдүү каршылык (φ=0°)</button>
+                        <button class="preset-btn" data-preset="ind">Таза индуктивдүүлүк (φ=−90°)</button>
+                        <button class="preset-btn" data-preset="cap">Таза сыйымдуулук (φ=+90°)</button>
+                    </div>
+                    <div id="preset-info" class="info-box">
+                        Активдүү каршылыкта чыңалуу жана ток фаза боюнча дал келет (φ=0°). Бардык электр энергиясы пайдалуу жумушка (жылуулукка) айланат.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Эсептелген тирүү чоңдуктар -->
+            <div class="live-values-bar">
+                <div class="val-card"><span>U (аракет этүүчү):</span> <strong id="calc-u">0</strong> В</div>
+                <div class="val-card"><span>I (аракет этүүчү):</span> <strong id="calc-i">0</strong> А</div>
+                <div class="val-card"><span>cos φ:</span> <strong id="calc-cos">0</strong></div>
+                <div class="val-card"><span>P (активдүү кубаттуулук):</span> <strong id="calc-p">0</strong> Вт</div>
+                <div class="val-card"><span>p<sub>макс</sub> / p<sub>мин</sub>:</span> <strong id="calc-p-range">0 / 0</strong> Вт</div>
+            </div>
+        </section>
+
+        <!-- 5. БӨЛҮМ: Калькулятор -->
+        <section id="calculator" class="section">
+            <h1>Физикалык онлайн калькулятор</h1>
+            <div class="calc-tabs">
+                <button class="calc-tab-btn active" data-tab="mode-work">А = UIt (Токтун жумушу)</button>
+                <button class="calc-tab-btn" data-tab="mode-power">P = UI cos φ (Өзгөрмө токтун кубаттуулугу)</button>
+            </div>
+
+            <div class="calc-card">
+                <!-- Калькулятор Түрү 1 -->
+                <div id="mode-work" class="calc-mode-content active">
+                    <div class="input-grid">
+                        <div class="input-field">
+                            <label for="work-u">Чыңалуу, U (В):</label>
+                            <input type="number" id="work-u" placeholder="Мисалы: 220">
+                        </div>
+                        <div class="input-field">
+                            <label for="work-i">Ток күчү, I (А):</label>
+                            <input type="number" id="work-i" placeholder="Мисалы: 5">
+                        </div>
+                        <div class="input-field">
+                            <label for="work-t">Убакыт, t (секунд):</label>
+                            <input type="number" id="work-t" placeholder="Мисалы: 60">
+                        </div>
+                    </div>
+                    <button id="calc-work-btn" class="btn btn-primary">Эсептөө</button>
+                </div>
+
+                <!-- Калькулятор Түрү 2 -->
+                <div id="mode-power" class="calc-mode-content">
+                    <div class="input-type-selector">
+                        <label><input type="radio" name="input-mode" value="effective" checked> Аракет этүүчү маанилер (U, I)</label>
+                        <label><input type="radio" name="input-mode" value="amplitude"> Амплитудалык маанилер (U<sub>m</sub>, I<sub>m</sub>)</label>
+                    </div>
+                    <div class="input-grid">
+                        <div class="input-field">
+                            <label for="power-u" id="label-u">Чыңалуу U (В):</label>
+                            <input type="number" id="power-u" placeholder="Мисалы: 220">
+                        </div>
+                        <div class="input-field">
+                            <label for="power-i" id="label-i">Ток күчү I (А):</label>
+                            <input type="number" id="power-i" placeholder="Мисалы: 2">
+                        </div>
+                        <div class="input-field">
+                            <label for="power-phi">Фазалык жылышуу, φ (градус):</label>
+                            <input type="number" id="power-phi" placeholder="Мисалы: 0">
+                        </div>
+                    </div>
+                    <button id="calc-power-btn" class="btn btn-primary">Эсептөө</button>
+                </div>
+
+                <div id="calc-error" class="error-msg" style="display: none;"></div>
+                <div id="calc-result" class="result-box" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- 6. БӨЛҮМ: Бирдиктерди которуу -->
+        <section id="units" class="section">
+            <h1>Кубаттуулуктун бирдиктерин которуу</h1>
+            <p class="section-desc">Китеп боюнча: 1 Вт = 1 А·1 В; 1 гВт = 100 Вт; 1 кВт = 1000 Вт = 10 гВт.</p>
+            <div class="converter-card">
+                <div class="converter-row">
+                    <div class="conv-field">
+                        <label for="unit-val-1" id="lbl-unit-1">Ватт (Вт):</label>
+                        <input type="number" id="unit-val-1" value="1000">
+                    </div>
+                    <button id="swap-units-btn" class="btn btn-circle" title="Алмаштыруу">⇄</button>
+                    <div class="conv-field">
+                        <label for="unit-val-2" id="lbl-unit-2">Киловатт (кВт):</label>
+                        <input type="number" id="unit-val-2" value="1">
+                    </div>
+                </div>
+                <div class="unit-selector-row">
+                    <label>Биринчи бирдик: 
+                        <select id="select-unit-1">
+                            <option value="W" selected>Ватт (Вт)</option>
+                            <option value="gW">Гектоватт (гВт)</option>
+                            <option value="kW">Киловатт (кВт)</option>
+                        </select>
+                    </label>
+                    <label>Екинчи бирдик: 
+                        <select id="select-unit-2">
+                            <option value="W">Ватт (Вт)</option>
+                            <option value="gW">Гектоватт (гВт)</option>
+                            <option value="kW" selected>Киловатт (кВт)</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. БӨЛҮМ: Текшерүү (Тест) -->
+        <section id="quiz" class="section">
+            <h1>Алган билимиңизди текшериңиз (10 суроо)</h1>
+            <div class="quiz-container">
+                <div id="quiz-list"></div>
+                <div class="quiz-actions">
+                    <button id="submit-quiz-btn" class="btn btn-primary">Жыйынтыкты көрүү</button>
+                    <button id="reset-quiz-btn" class="btn btn-secondary">Кайра баштоо</button>
+                </div>
+                <div id="quis-result-card" class="result-box" style="display: none;"></div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer"> 
+<p>© 11-класс Физика курсу | Интерактивдүү окуу куралы</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
